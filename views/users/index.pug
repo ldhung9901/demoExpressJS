@@ -1,11 +1,12 @@
 html
   head
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
     title= title
   body
    h1 Users:
    form(action="/users/search", method="GET")
     input#name(type="text" placeholder="Enter name ..." name="name")
-    button Search
+    button(class="btn btn-primary") Search
    ul
   each user in users
     li= user.name

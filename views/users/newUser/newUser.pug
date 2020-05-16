@@ -1,11 +1,12 @@
 html
   head
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
     title= title
   body
    h1 New users:
    form(action="/users/create", method="POST")
     input(type="text" placeholder="Enter new user..." name="name")
-    button Create
+    button(class="btn btn-primary") Create
   a(href = "http://localhost:3000/users") Back to Users
   br
   a(href = "http://localhost:3000/") Back to Home

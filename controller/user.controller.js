@@ -24,8 +24,8 @@ module.exports = {
 
     },
     postCreate: function (req, res) {
-
-        users.push(req.body);
-        res.redirect('/users');
+            users.push(req.body);
+            res.redirect('/users');
+          
     }
 }

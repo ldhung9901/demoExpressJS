@@ -1,6 +1,7 @@
 const express = require('express')
 var bodyParser = require('body-parser')
-var router = require('./routers/user.router')
+var userRouter = require('./routers/user.router')
+var authRouter = require('./routers/auth.router')
 // parse application/json
 
 
@@ -15,7 +16,8 @@ const pug = require('pug');
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use('/users', router)
+app.use('/auth', authRouter)
+app.use('/users', userRouter)
 
 app.set('view engine', 'pug')
 

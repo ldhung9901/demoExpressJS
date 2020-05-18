@@ -17,13 +17,16 @@ module.exports = {
     res.render("./users/index", { title: "Users", users: users });
   },
   search: function (req, res) {
-    var matchedUsers= db.get("users").find({ name: req.query.name }).value();
-    console.log(matchedUsers);
+    var user_data = db.get("users").value();
+    var matchedUsers = user_data.filter((user) => {
+      return user.name.toLowerCase().indexOf(req.query.name) !== -1;
+    });
+    console.log(req.query);
     var reqStr = JSON.stringify(req.query.name);
     res.render("./users/index", {
       title: "Users Matched",
-      users:[matchedUsers] ,
-      input: reqStr
+      users: matchedUsers,
+      input: reqStr,
     });
   },
   create: function (req, res) {
@@ -35,4 +38,13 @@ module.exports = {
       .write();
     res.redirect("/users");
   },
+  postDeleted: function (req, res) {
+    console.log(req.body.id);
+    db.get("users").remove({ id:req.body.id }).write();
+    res.redirect("/users");
+  },
+  login: function (req, res){
+      console.log(req.query)
+      res.render("./login")
+  }
 };

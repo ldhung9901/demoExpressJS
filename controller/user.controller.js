@@ -10,6 +10,7 @@ var users = [
 
 module.exports = {
     index: function (req, res) {
+        console.log(users)
         res.render('./users/index', { title: 'Users', users: users })
     },
     search: function (req, res) {
@@ -17,7 +18,7 @@ module.exports = {
             return user.name.toLowerCase().indexOf(req.query.name) !== -1;
         })
         var reqStr = JSON.stringify(req.query.name);
-        res.render('./users/index', { title: 'Users', users: matchedUsers, input: reqStr })
+        res.render('./users/index', { title: 'Users hung', users: matchedUsers, input: reqStr })
     },
     create: function (req, res) {
         res.render("./users/newUser/newUser");

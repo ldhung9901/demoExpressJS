@@ -4,8 +4,11 @@ var router = require('./routers/user.router')
 // parse application/json
 
 
-const app = express()
-const port = 3000
+
+
+
+const app = express();
+const port = 3000;
 const pug = require('pug');
 
 
@@ -22,4 +25,5 @@ app.get('/', function (req, res) {
 })
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+
 

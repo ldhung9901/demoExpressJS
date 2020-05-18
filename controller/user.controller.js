@@ -1,31 +1,38 @@
+const low = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
+const adapter = new FileSync("db.json");
+const db = low(adapter);
+const shortid = require("shortid");
 
-var express = require('express')
-var router = express.Router()
-var controller = require('../controller/user.controller')
-var users = [
-    { id: 1, name: 'Hung' },
-    { id: 2, name: 'Dung' },
-    { id: 3, name: 'Uyen' },
-]
+db.defaults({ users: [] }).write();
+
+var users = db.get("users").value();
+console.log(users);
+var express = require("express");
+var router = express.Router();
+var controller = require("../controller/user.controller");
 
 module.exports = {
-    index: function (req, res) {
-        res.render('./users/index', { title: 'Users', users: users })
-    },
-    search: function (req, res) {
-        var matchedUsers = users.filter(user => {
-            return user.name.toLowerCase().indexOf(req.query.name) !== -1;
-        })
-        var reqStr = JSON.stringify(req.query.name);
-        res.render('./users/index', { title: 'Users', users: matchedUsers, input: reqStr })
-    },
-    create: function (req, res) {
-        res.render("./users/newUser/newUser");
-
-    },
-    postCreate: function (req, res) {
-            users.push(req.body);
-            res.redirect('/users');
-          
-    }
-}
+  index: function (req, res) {
+    res.render("./users/index", { title: "Users", users: users });
+  },
+  search: function (req, res) {
+    var matchedUsers= db.get("users").find({ name: req.query.name }).value();
+    console.log(matchedUsers);
+    var reqStr = JSON.stringify(req.query.name);
+    res.render("./users/index", {
+      title: "Users Matched",
+      users:[matchedUsers] ,
+      input: reqStr
+    });
+  },
+  create: function (req, res) {
+    res.render("./users/newUser/newUser");
+  },
+  postCreate: function (req, res) {
+    db.get("users")
+      .push({ id: shortid.generate(), name: req.body.name })
+      .write();
+    res.redirect("/users");
+  },
+};

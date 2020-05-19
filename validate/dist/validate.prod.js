@@ -1,0 +1,1 @@
+"use strict";var bodyParser=require("body-parser");module.exports.validate=function(e,r,n){var a=[];if(e.body.name||a.push("Enter name."),0<a.length)return r.render("./users/newUser/newUser",{error:a,value:e.body.name});n()};

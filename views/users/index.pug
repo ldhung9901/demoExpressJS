@@ -3,16 +3,37 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
     title= title
   body
+   nav.navbar.navbar-expand.navbar-dark.bg-primary   
+      a.navbar-brand(href='#') User
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavAltMarkup.collapse.navbar-collapse.d-flex.justify-content-end
+          a(href="/auth/login")
+            button.ml-auto(class="btn my-2 my-sm-0") Login    
+  .container
    h1 Users:
    form(action="/users/search", method="GET")
-    input#name(type="text" placeholder="Enter name ..." name="name")
-    button(class="btn btn-primary") Search
-   ul
-  each user in users
-    li= user.name
-  a(href = "http://localhost:3000/users") Back to Users
-  br
-  a(href = "http://localhost:3000/") Back to Home
-  br
-  a(href = "http://localhost:3000/users/create") New User
+    .form-group
+      label(for="name")
+      .d-flex
+        input#name(type="text" class="form-control" placeholder="Enter name ..." name="name")
+        button(class="btn btn-primary ml-3") Search
+   table.table.table-hover
+    thead
+      tr
+        th(scope='col') Name
+        th(scope='col') Action
+    tbody
+      each user in users
+       tr
+        td.p-0.align-middle= user.name
+        td.d-flex
+         form.mb-0(action="/users" method="POST")
+          button.btn.btn-primary.btn-sm(value=user.id, name="id",action="/users" method="POST") Delete
+
+   a(href = "http://localhost:3000/users") Back to Users
+   br
+   a(href = "http://localhost:3000/") Back to Home
+   br
+   a(href = "http://localhost:3000/users/create") New User
    

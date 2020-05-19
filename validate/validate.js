@@ -12,9 +12,8 @@ module.exports.validate = function (req, res,next) {
         return res.render("./login", {
             error: errors,
             value: req.body.name
-        });
-    }
-    else { next() };
+        })}
+    else {next()};
     
 
 } 

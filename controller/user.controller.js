@@ -9,6 +9,8 @@ db.defaults({ users: [] }).write();
 var users = db.get("users").value();
 console.log(users);
 var express = require("express");
+
+const app = express();
 var router = express.Router();
 var controller = require("../controller/user.controller");
 
@@ -34,17 +36,20 @@ module.exports = {
   },
   postCreate: function (req, res) {
     db.get("users")
-      .push({ id: shortid.generate(), name: req.body.name })
+      .push({
+        id: shortid.generate(),
+        name: req.body.name,
+        password: req.body.password,
+      })
       .write();
-    res.redirect("/users");
+    res.redirect("/users")
+    
   },
   postDeleted: function (req, res) {
-    console.log(req.body.id);
-    db.get("users").remove({ id:req.body.id }).write();
+    db.get("users").remove({ id: req.body.id }).write();
     res.redirect("/users");
   },
-  login: function (req, res){
-      console.log(req.query)
-      res.render("./login")
-  }
+  login: function (req, res) {
+    res.render("./login");
+  },
 };

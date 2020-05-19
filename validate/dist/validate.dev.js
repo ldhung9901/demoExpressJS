@@ -9,8 +9,12 @@ module.exports.validate = function (req, res, next) {
     errors.push("Enter name.");
   }
 
+  if (!req.body.password) {
+    errors.push("Enter password.");
+  }
+
   if (errors.length > 0) {
-    return res.render("./users/newUser/newUser", {
+    return res.render("./login", {
       error: errors,
       value: req.body.name
     });

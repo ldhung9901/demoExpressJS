@@ -1,15 +1,6 @@
-html
-  head
-   link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
-   title= title
-  body
-   nav.navbar.navbar-expand.navbar-dark.bg-primary   
-      a.navbar-brand(href='#') User
-      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarNavAltMarkup.collapse.navbar-collapse.d-flex.justify-content-end
-          a(href="/auth/login")
-            button.ml-auto(class="btn my-2 my-sm-0") Login
+extends common.pug
+
+block body
   .container
     h1 Welcome to my user
     a(href = "/users") Go to users

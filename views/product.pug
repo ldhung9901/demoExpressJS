@@ -2,60 +2,23 @@ extends common.pug
 block body
    .container
      .row(style="margin-bottom:30px")
+      each product in products
        .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-       .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere 
-       .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-       .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-     .row
-        .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-        .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-        .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
-        .col-lg-3
-         .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
-           .card-body(style ="text-align: center;")
-             h5.card-title(style="text-align: center;") Cat
-             img(src=img, alt="", style="text-align: center; border-radius: 20px")
-             p.card-text With supporting text below as a natural lead-in to additional content.
-             a.btn.btn-primary(href='#') Go somewhere
+        .card.text-white.bg-dark.mb-3(style ="border-radius: 30px")
+          .card-body(style ="text-align: center;")
+            h5.card-title(style="text-align: center;") Cat
+            img(src=product.img, alt="", style="text-align: center; border-radius: 20px")
+            p.card-text With supporting text below as a natural lead-in to additional content.
+            a.btn.btn-primary(href='#') Go somewhere
+     nav(aria-label='Page navigation example')
+       ul.pagination.justify-content-center
+         li.page-item
+           a.page-link(href='http://localhost:3000/product?page='+ pagePrevious) Previous
+         li.page-item
+           a.page-link(href='http://localhost:3000/product?page='+1)=pagePrevious
+         li.page-item.active
+           a.page-link(href='http://localhost:3000/product?page='+2)=page 
+         li.page-itemp
+           a.page-link(href='http://localhost:3000/product?page='+3)=pageNext
+         li.page-item
+           a.page-link(href='http://localhost:3000/product?page='+ pageNext) Next

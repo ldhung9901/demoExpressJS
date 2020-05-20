@@ -5,7 +5,7 @@ var authRouter = require('./routers/auth.router')
 // parse application/json
 var cookieParser = require('cookie-parser')
 var loginValidate = require("./validate/login.check")
-
+var product = require('./routers/product.router')
 
 
 const app = express();
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use('/auth', authRouter)
 app.use('/users', loginValidate.logincheck_2, userRouter)
-
+app.use('/product', product)
 app.set('view engine', 'pug')
 
 

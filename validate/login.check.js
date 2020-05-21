@@ -4,6 +4,7 @@ const adapter = new FileSync("db.json");
 const db = low(adapter);
 const express = require('express')
 const app = express()
+
 module.exports.loginCheck = function (req, res, next) {
   db.read()
   var user = db.get("users").find({ name: req.body.name });
@@ -26,7 +27,7 @@ module.exports.loginCheck = function (req, res, next) {
     app.locals.user1 = user.value();
     res.locals.user1 =app.locals.user1;
     
-    return next();
+    return next()
   }
 
   if (user.password !== req.body.password) {
@@ -43,6 +44,8 @@ module.exports.loginCheck = function (req, res, next) {
 module.exports.logincheck_2 = function (req, res, next) {
   
   var errors = [];
+  
+res.locals.user1=app.locals.user1;
   if (req.signedCookies.id === undefined) {
     return res.render("./login", {
       error: errors,

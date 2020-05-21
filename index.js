@@ -12,12 +12,16 @@ const app = express();
 const port = 3000;
 const pug = require('pug');
 
-app.use(cookieParser('sdfsdfsdf23'))
 
+var multer  = require('multer')
+var upload = multer({ dest: './public/upload' })
+
+app.use(cookieParser('sdfsdfsdf23'))
+app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use('/auth', authRouter)
-app.use('/users', loginValidate.logincheck_2, userRouter)
+app.use('/users', upload.single('avatar'),loginValidate.logincheck_2, userRouter)
 app.use('/product', product)
 app.set('view engine', 'pug')
 

@@ -9,15 +9,18 @@ block body
          span(aria-hidden='true') &times;
    .container
     h1 New users
-    form(action="/users/create", method="POST")
+    form(action="/users/create", method="POST", enctype="multipart/form-data")
       .form-group
         label( for="name") Name
         .d-flex
           input#name(type="text" class="form-control" placeholder="Enter new user..." name="name" value= value ? value : "" )
         label( for="pasword") Password
         .d-flex
-          input#name(type="text" class="form-control" placeholder="Enter new user..." name="password" value= value ? value : "" )
-          button(class="btn btn-primary ml-3") Create
+          input#password(type="password" class="form-control" placeholder="Enter new user..." name="password" value= value ? value : "" )
+        label( for="avatar") Avatar
+        .d-flex
+          input#avatar.form-control-file(name="avatar" , type="file")
+        button(class="btn btn-primary ml-3", style="margin: 15px 0px!important;") Create
     a(href = "http://localhost:3000/users") Back to Users
     br
     a(href = "http://localhost:3000/") Back to Home

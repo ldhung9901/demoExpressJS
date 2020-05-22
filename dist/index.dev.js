@@ -1,5 +1,7 @@
 "use strict";
 
+require('dotenv').config();
+
 var express = require('express');
 
 var bodyParser = require('body-parser');
@@ -13,18 +15,30 @@ var cookieParser = require('cookie-parser');
 
 var loginValidate = require("./validate/login.check");
 
+var product = require('./routers/product.router');
+
+var mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGO_URL);
 var app = express();
 var port = 3000;
 
 var pug = require('pug');
 
+var multer = require('multer');
+
+var upload = multer({
+  dest: './public/upload'
+});
 app.use(cookieParser('sdfsdfsdf23'));
+app.use(express["static"]('public'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
 app.use('/auth', authRouter);
-app.use('/users', loginValidate.logincheck_2, userRouter);
+app.use('/users', upload.single('avatar'), userRouter);
+app.use('/product', product);
 app.set('view engine', 'pug');
 app.get('/', function (req, res) {
   res.render('index', {

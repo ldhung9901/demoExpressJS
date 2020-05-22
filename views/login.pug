@@ -8,7 +8,7 @@ block body
             button.close(type='button', data-dismiss='alert', aria-label='Close')
               span(aria-hidden='true') &times;
     .container
-        h1.mt-20 New users
+        h1.mt-20 Login
         form(action="/auth/login", method="POST")
           .form-group
             div
@@ -18,7 +18,7 @@ block body
                 label( for="name") Password
                 input#name(type="password" class="form-control col-6" placeholder="Enter password..." name="password" value= value ? value : "" )
             div
-                button(class="btn btn-primary") Login
+                button(class="btn btn-primary",style="margin: 15px 0px!important;") Login
         a(href = "http://localhost:3000/users") Back to Users
         br
         a(href = "http://localhost:3000/") Back to Home

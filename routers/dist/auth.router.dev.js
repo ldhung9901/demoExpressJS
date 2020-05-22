@@ -11,5 +11,6 @@ var validate = require("../validate/validate");
 var loginValidate = require("../validate/login.check");
 
 authRouter.get("/login", loginValidate.logincheck_2, controller.login);
-authRouter.post("/login", validate.validate, loginValidate.loginCheck, controller.index);
+authRouter.post("/login", validate.validate, loginValidate.loginCheck, controller.reIndex);
+authRouter.get("/logout", loginValidate.logincheck_2, controller.logout);
 module.exports = authRouter;

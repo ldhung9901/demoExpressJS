@@ -16,22 +16,42 @@ db.defaults({
 var express = require("express");
 
 var app = express();
+
+var Product = require('../product.model');
+
 module.exports = {
   product: function product(req, res) {
-    var page = req.query.page || 1;
-    var perPage = 8;
-    var start = (page - 1) * perPage;
-    var end = page * perPage;
-    var products = db.get("product").value().slice(start, end);
-    var pageNext = parseInt(parseInt(page) + 1);
-    var pagePrevious = page - 1;
-    console.log(pageNext);
-    res.render("./product", {
-      title: "product",
-      products: products,
-      page: page,
-      pagePrevious: pagePrevious,
-      pageNext: pageNext
+    var page, perPage, start, end, products, pageNext, pagePrevious, newProduct;
+    return regeneratorRuntime.async(function product$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            page = req.query.page || 1;
+            perPage = 8;
+            start = (page - 1) * perPage;
+            end = page * perPage;
+            _context.next = 6;
+            return regeneratorRuntime.awrap(Product.find());
+
+          case 6:
+            products = _context.sent;
+            pageNext = parseInt(parseInt(page) + 1);
+            pagePrevious = page - 1;
+            console.log(pageNext);
+            newProduct = products.slice(start, end);
+            res.render("./product", {
+              title: "product",
+              products: newProduct,
+              page: page,
+              pagePrevious: pagePrevious,
+              pageNext: pageNext
+            });
+
+          case 12:
+          case "end":
+            return _context.stop();
+        }
+      }
     });
   }
 };

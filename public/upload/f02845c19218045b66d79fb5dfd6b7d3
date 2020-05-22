@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Xiaomi Redmi Note 5 Global/Pro (whyred) - Pixel Experience>">
+<meta property="og:title" content="Xiaomi Redmi Note 5 Global/Pro (whyred) - Pixel Experience">
+<meta property="og:description" content="Xiaomi Redmi Note 5 Global/Pro (whyred) - Pixel Experience">
+<meta property="og:site_name" content="Xiaomi Redmi Note 5 Global/Pro (whyred) - Pixel Experience">
+<meta property="og:image" content="//pixelexperience.org/images/banner.png" />
+<meta name="keywords" content="pixel experience,pixel,experience,oreo,google,google pixel,android 10,android q,pie,aosp,ten,android,custom rom,rom">
+<meta name="msapplication-TileColor" content="#2D2D2D">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#2D2D2D">
+<title>Xiaomi Redmi Note 5 Global/Pro (whyred) - PixelExperience</title>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+<link href="/assets/css/js-warn-min.css" rel="stylesheet">
+
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-117968208-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-117968208-1');
+  </script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css">
+
+<script src="/assets/js/load-image.all.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.6/jsrender.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="/assets/css/main.v11.css">
+</head>
+<body>
+
+<div class="js-warning" id="javascript-disabled">
+<div class="js-warn">
+<h1>Javascript is disabled</h1>
+<p>You need to enable Javascript to view this site</p>
+<p>To enable Javascript click <a href="http://www.enable-javascript.com/" target="_blank">here</a></p>
+</div>
+<script>var jswarn = document.getElementById("javascript-disabled"); jswarn.parentNode.removeChild(jswarn);</script>
+</div>
+<header>
+<nav class="wrap">
+<div class="branding">
+<a href="/">
+<img src="/images/PixelExperienceLogo_White.svg" alt="PixelExperience">
+</a>
+</div>
+<div class="menu__wrapper" id="nav_menu">
+<button class="hamburger">
+<svg viewBox="0 0 20 20" fill="currentColor" class="icon__open">
+<path fill-rule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+</svg>
+<svg viewBox="0 0 20 20" fill="currentColor" class="icon__close">
+<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+</svg>
+</button>
+<ul class="menu">
+<li class=""><a href="/"><i class="material-icons">
+home
+</i> Home</a></li>
+<li class=""><a href="/devices"><i class="material-icons">
+phone_android
+</i> Devices</a></li>
+<li><a href="https://blog.pixelexperience.org" target="_blank">
+<i class="material-icons">
+rss_feed
+</i>
+News</a></li>
+<li class=""><a href="/about"><i class="material-icons">
+info
+</i> About</a></li>
+<li><a href="https://bit.ly/jhenrique09_paypal" target="_blank"><i class="material-icons">
+attach_money
+</i> Donate</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="search__bar">
+<form action="/search" method="post" class="search__form">
+<input type="hidden" name="_token" value="tM99yp6tAFVugIF35B01OJaRmuwiUzrxOCyfbnB8">
+<input type="text" name="device" class="input__search" placeholder="Search Your Device" id="device_search" spellcheck="false">
+</form>
+</div>
+
+<div style="padding-top:50px;">
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:970px;height:250px" data-ad-client="ca-pub-9406854625630698" data-ad-slot="1699020945"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+</div>
+<main>
+<div class="device__header">
+<div class="wrap">
+<h2 class="device__title">Xiaomi Redmi Note 5 Global/Pro</h2>
+<h3 class="device__codename">whyred</h3>
+</div>
+</div>
+<div class="device__info wrap">
+<div class="device__dwrap">
+<img src="/images/device.svg" alt="" class="device__image" data-load-device-image="whyred">
+<div class="device__meta">
+<div class="meta__item">
+<h4>Latest build</h4>
+<span>May 13, 2020 08:52</span>
+</div>
+<div class="meta__item">
+<h4>Maintainers (All Versions)</h4>
+<ul class="links">
+<li><a href="/team/Keertesh19">Keertesh</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="device__downloads">
+<div class="versions">
+
+<div class="accordion_tab version__item" data-version="ten">
+ <button class="item__stable"><svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+10</button>
+<div class="accordion_content version__content">
+<div class="fullpackage">
+<div class="maintainer__info">
+Maintainer(s):
+<a href="/team/Keertesh19">Keertesh</a>
+</div>
+<div class="device__support">
+<a href="https://forum.xda-developers.com/redmi-note-5-pro/development/rom-pixel-experience-t3973479" target="_blank" class="forum__link"><i class="material-icons">forum</i> Forum discussion</a>
+</div>
+<h3 class="package__heading">Full packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_whyred-10.0-20200513-0811-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/05/13
+</span>
+<span class="download__count">
+962
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_whyred-10.0-20200513-0811-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrZE1mdmNua1lha1BzaC9CTzhseEMyQUNYYmY3Y3JSNEQyMXljMU4vME0rTldFeE85dGZxTi9EdnFNU2daRHhKR3c9PQ==" data-file-name="PixelExperience_whyred-10.0-20200513-0811-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1.28 GB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10</li>
+<li><span>File name:</span> PixelExperience_whyred-10.0-20200513-0811-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 82eb2c33179beb9762c02a6854b0ee67</li>
+<li><span>Date:</span> May 13, 2020 08:11 UTC</li>
+<li><span>Downloads:</span> 962</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * MAY security patch.
+* Disabled APEX.
+* Fixed Encryption issues.
+* Fixed Data latency bug.
+* Fixed Manual Netwrok Selection bug.
+* Fixed lags on screenrecorder and OOMS (Source).
+* Updated blobs from LA.UM.8.2.r1-06500-sdm660.0.
+* Updated stock blobs from V11.0.3.0.
+* Reverted to OLD cam blobs (from V10.3.5.0).
+* Removed unnecessary FP gesture overlay.
+* Fixed memecam Issues.
+* Rebase and clean up trees.
+* Add back PixelLiveWallpapers
+* .223 merged into kernel.
+* Fixed mic not working while earphones are plugged in.
+* Many more improvements.
+* Switched to tp_common dt2w implementation.
+
+* neonKernel as default kernel as other kernels doesnt have new implemenation for dt2w and led yet. (thanks to @ctwoon)
+
+**NOTE- Vilte works but partially so dont complain about that yet will be fixed.
+                                        </textarea>
+</div>
+</div>
+</div>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_whyred-10.0-20200418-1014-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/04/18
+</span>
+<span class="download__count">
+4967
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_whyred-10.0-20200418-1014-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrZE1mdmNua1lha1BzaC9CTzhseEMyQ3NtdTFRRC9IZWw5bEhUNXdvM1Q0a05NRVd2REJxZ0ZSUWpWVTNNWXo3dGc9PQ==" data-file-name="PixelExperience_whyred-10.0-20200418-1014-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1.20 GB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10</li>
+<li><span>File name:</span> PixelExperience_whyred-10.0-20200418-1014-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> e34d7379c057d884a0a646cfadfefb28</li>
+<li><span>Date:</span> April 18, 2020 10:14 UTC</li>
+<li><span>Downloads:</span> 4967</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            //** Clean flash mandatory! **//
+Changelogs-
+* Moved to common trees (better ram management, updated blobs and better performance).
+##Special thanks to @rcstar6696 and @ctwoon for helping##
+*Rad-eas v4.1 kernel.
+*Fixed and improved audio.
+*Enforcing build.
+*App crashes should be fixed.
+*Updated led patterns.
+*Updated vibration and brightness from Pixel 3A.
+*Spoof Pixel2XL for pixel related features.
+*Google standards for statusbar.
+*Enable Pixel Power hal and enable PowerStats.
+**Clean up and bug fixes.
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="incremental">
+<h3 class="package__heading">Incremental packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_whyred-10.0-20200418-1014-update-20200513-0811-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/05/13
+</span>
+<span class="download__count">
+1051
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_whyred-10.0-20200418-1014-update-20200513-0811-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrZE1mdmNua1lha1BzaC9CTzhseEMyQ3NtdTFRRC9IZWw5bEhUNXdvM1Q0azAySWRPOHVxRE1Cd3dTMU4yTVR5VkhvZEJNb3VYYytxemtmOG1HNnl6YjAxWTN5QkRuMnBpRzQxZldPOUhlSWY=" data-file-name="PixelExperience_whyred-10.0-20200418-1014-update-20200513-0811-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download incremental update (455 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10</li>
+<li><span>File name:</span> PixelExperience_whyred-10.0-20200418-1014-update-20200513-0811-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> d6901e22621050b6350fe350057c9857</li>
+<li><span>Date:</span> May 13, 2020 08:11 UTC</li>
+<li><span>Downloads:</span> 1051</li>
+<li><span>Required version:</span> PixelExperience_whyred-10.0-20200418-1014-OFFICIAL.zip</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * MAY security patch.
+* Disabled APEX.
+* Fixed Encryption issues.
+* Fixed Data latency bug.
+* Fixed Manual Netwrok Selection bug.
+* Fixed lags on screenrecorder and OOMS (Source).
+* Updated blobs from LA.UM.8.2.r1-06500-sdm660.0.
+* Updated stock blobs from V11.0.3.0.
+* Reverted to OLD cam blobs (from V10.3.5.0).
+* Removed unnecessary FP gesture overlay.
+* Fixed memecam Issues.
+* Rebase and clean up trees.
+* Add back PixelLiveWallpapers
+* .223 merged into kernel.
+* Fixed mic not working while earphones are plugged in.
+* Many more improvements.
+* Switched to tp_common dt2w implementation.
+
+* neonKernel as default kernel as other kernels doesnt have new implemenation for dt2w and led yet. (thanks to @ctwoon)
+
+**NOTE- Vilte works but partially so dont complain about that yet will be fixed.
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="accordion_tab version__item" data-version="ten_plus">
+<button class="item__stable"><svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+10 (Plus edition)</button>
+<div class="accordion_content version__content">
+<div class="fullpackage">
+<div class="maintainer__info">
+Maintainer(s):
+<a href="/team/Keertesh19">Keertesh</a>
+</div>
+<div class="device__support">
+<a href="https://forum.xda-developers.com/redmi-note-5-pro/development/rom-pixel-experience-t3973479" target="_blank" class="forum__link"><i class="material-icons">forum</i> Forum discussion</a>
+</div>
+<h3 class="package__heading">Full packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_Plus_whyred-10.0-20200513-0852-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/05/13
+</span>
+<span class="download__count">
+1785
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_Plus_whyred-10.0-20200513-0852-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrUjR6U1ZMN1VNaGpXdTZ5ZUpKTm9haEM1WW12dGNsNjluSHVpeEN2R0d0UWw1RGtTOE82clJ3RGt6cjdsOE5BSFRZYkYybCs2Z3hVMFdySmhEWWpiZzQ9" data-file-name="PixelExperience_Plus_whyred-10.0-20200513-0852-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+ Download full update (1.28 GB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10 (Plus edition)</li>
+<li><span>File name:</span> PixelExperience_Plus_whyred-10.0-20200513-0852-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 754b03f1a48379f7fc9cc0b358245405</li>
+<li><span>Date:</span> May 13, 2020 08:52 UTC</li>
+<li><span>Downloads:</span> 1785</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * MAY security patch.
+* Disabled APEX.
+* Fixed Encryption issues.
+* Fixed Data latency bug.
+* Fixed Manual Netwrok Selection bug.
+* Reworked Network Tracffic Indicators (Source).
+* Fixed lags on screenrecorder and OOMS (Source).
+* Updated blobs from LA.UM.8.2.r1-06500-sdm660.0.
+* Updated stock blobs from V11.0.3.0.
+* Reverted to OLD cam blobs (from V10.3.5.0).
+* Removed unnecessary FP gesture overlay.
+* Fixed memecam Issues.
+* Rebase and clean up trees.
+* Add back PixelLiveWallpapers
+* .223 merged into kernel.
+* Fixed mic not working while earphones are plugged in.
+* Many more improvements.
+* Switched to tp_common dt2w implementation.
+
+* neonKernel as default kernel as other kernels doesnt have new implemenation for dt2w and led yet. (thanks to @ctwoon)
+
+**NOTE- Vilte works but partially so dont complain about that yet will be fixed.
+                                        </textarea>
+</div>
+</div>
+</div>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_Plus_whyred-10.0-20200418-1019-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/04/18
+</span>
+<span class="download__count">
+10085
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_Plus_whyred-10.0-20200418-1019-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrUjR6U1ZMN1VNaGpXdTZ5ZUpKTm9haExsSzlBUUlpc2xqSzI5Z0FxbFpCdUthd1N4L0hpSW1RTVJyQ094ckJVbXJ1dVY3L2xtSHlqREdnNmFGMUdxVTQ9" data-file-name="PixelExperience_Plus_whyred-10.0-20200418-1019-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1.20 GB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10 (Plus edition)</li>
+ <li><span>File name:</span> PixelExperience_Plus_whyred-10.0-20200418-1019-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> c7f99932a4413a9a32dac2ad7ef04e66</li>
+<li><span>Date:</span> April 18, 2020 10:19 UTC</li>
+<li><span>Downloads:</span> 10085</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            //** Clean flash mandatory! **//
+Changelogs-
+* Moved to common trees (better ram management, updated blobs and better performance).
+##Special thanks to @rcstar6696 and @ctwoon for helping##
+*Rad-eas v4.1 kernel.
+*Fixed and improved audio.
+*Enforcing build.
+*App crashes should be fixed.
+*Updated led patterns.
+*Updated vibration and brightness from Pixel 3A.
+*Spoof Pixel2XL for pixel related features.
+*Google standards for statusbar.
+*Enable Pixel Power hal and enable PowerStats.
+**Clean up and bug fixes.
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="incremental">
+<h3 class="package__heading">Incremental packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_Plus_whyred-10.0-20200418-1019-update-20200513-0852-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2020/05/13
+</span>
+<span class="download__count">
+2618
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_Plus_whyred-10.0-20200418-1019-update-20200513-0852-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrUjR6U1ZMN1VNaGpXdTZ5ZUpKTm9haExsSzlBUUlpc2xqSzI5Z0FxbFpCdVV2Zzl2cHpIWWVHNEpnY3BneWUvdGRiQUhPcUYrZU5ydUhVZ2ZpajRHaWxIQzlWcDMxclhYR2JoamtKTmRrZTI=" data-file-name="PixelExperience_Plus_whyred-10.0-20200418-1019-update-20200513-0852-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download incremental update (455 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> 10 (Plus edition)</li>
+<li><span>File name:</span> PixelExperience_Plus_whyred-10.0-20200418-1019-update-20200513-0852-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 14925f03b7a75761e3dc95c65f7bea53</li>
+<li><span>Date:</span> May 13, 2020 08:52 UTC</li>
+<li><span>Downloads:</span> 2618</li>
+<li><span>Required version:</span> PixelExperience_Plus_whyred-10.0-20200418-1019-OFFICIAL.zip</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * MAY security patch.
+* Disabled APEX.
+* Fixed Encryption issues.
+* Fixed Data latency bug.
+* Fixed Manual Netwrok Selection bug.
+* Reworked Network Tracffic Indicators (Source).
+* Fixed lags on screenrecorder and OOMS (Source).
+* Updated blobs from LA.UM.8.2.r1-06500-sdm660.0.
+* Updated stock blobs from V11.0.3.0.
+* Reverted to OLD cam blobs (from V10.3.5.0).
+* Removed unnecessary FP gesture overlay.
+* Fixed memecam Issues.
+* Rebase and clean up trees.
+* Add back PixelLiveWallpapers
+* .223 merged into kernel.
+* Fixed mic not working while earphones are plugged in.
+* Many more improvements.
+* Switched to tp_common dt2w implementation.
+
+* neonKernel as default kernel as other kernels doesnt have new implemenation for dt2w and led yet. (thanks to @ctwoon)
+
+**NOTE- Vilte works but partially so dont complain about that yet will be fixed.
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="accordion_tab version__item" data-version="pie">
+<button class="item__nosupport"><svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+Pie</button>
+<div class="accordion_content version__content">
+<div class="fullpackage">
+<h3 class="package__heading">Full packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_whyred-9.0-20191211-2037-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2019/12/11
+</span>
+<span class="download__count">
+ 7108
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_whyred-9.0-20191211-2037-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrV0ZwaHkrUmZHLzEwTzcyYVFQcEllakl2U3RmV0lLM3BZRkdmd3RIalVhbmlmVjE4aWh1dHdJbCtyM3hYNDFUVmc9PQ==" data-file-name="PixelExperience_whyred-9.0-20191211-2037-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1011 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> Pie</li>
+<li><span>File name:</span> PixelExperience_whyred-9.0-20191211-2037-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 750854e676c3d2702590c9c065b45404</li>
+<li><span>Date:</span> December 11, 2019 20:37 UTC</li>
+<li><span>Downloads:</span> 7108</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * December security patch
+                                        </textarea>
+</div>
+</div>
+</div>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_whyred-9.0-20191107-1443-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2019/11/07
+</span>
+<span class="download__count">
+3959
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_whyred-9.0-20191107-1443-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrV0ZwaHkrUmZHLzEwTzcyYVFQcEllalpTM0FQelVVNExjRHJIZUlzSkNYRVpKVVBqTUZxbVgzL2p1SjV2V0RVcmc9PQ==" data-file-name="PixelExperience_whyred-9.0-20191107-1443-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1011 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> Pie</li>
+<li><span>File name:</span> PixelExperience_whyred-9.0-20191107-1443-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> f09b645047939d850194778fc5ba613f</li>
+ <li><span>Date:</span> November 7, 2019 14:43 UTC</li>
+<li><span>Downloads:</span> 3959</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * November security patch
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="accordion_tab version__item" data-version="pie_plus">
+<button class="item__nosupport"><svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+Pie (Plus edition)</button>
+<div class="accordion_content version__content">
+<div class="fullpackage">
+<h3 class="package__heading">Full packages</h3>
+<div class="package__data">
+<span class="pd__header">
+<span class="pd__date">Date (UTC)</span>
+<span class="pd__dcount">Downloads</span>
+</span>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_Plus_whyred-9.0-20191211-2057-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2019/12/11
+</span>
+<span class="download__count">
+13855
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_Plus_whyred-9.0-20191211-2057-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrUjR6U1ZMN1VNaGpXdTZ5ZUpKTm9hamY2VWp5cDBmeStqZnAvSjRkSUVJT1FCaVpKUmlyZk8vTzZ6N0lpZFNSYWFkRGxFbW5LNFlGRXFLU2RXa2crWVk9" data-file-name="PixelExperience_Plus_whyred-9.0-20191211-2057-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1014 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> Pie (Plus edition)</li>
+<li><span>File name:</span> PixelExperience_Plus_whyred-9.0-20191211-2057-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 0e5b9bfd8a6acb51a9e2dbf1adb22165</li>
+<li><span>Date:</span> December 11, 2019 20:57 UTC</li>
+<li><span>Downloads:</span> 13855</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * December security patch
+                                        </textarea>
+</div>
+</div>
+</div>
+<div class="accordion_tab build__item" data-build-version="PixelExperience_Plus_whyred-9.0-20191107-1513-OFFICIAL.zip">
+<button>
+<span class="date">
+<svg viewBox="0 0 20 20" fill="currentColor" class="svg__icon">
+<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+2019/11/07
+</span>
+<span class="download__count">
+9150
+</span>
+</button>
+<div class="accordion_content build__info">
+<div class="build__ddata">
+<a href="/changelog/whyred/PixelExperience_Plus_whyred-9.0-20191107-1513-OFFICIAL.zip/" data-file-uid="eThIRmtIQXB6K3NHRm9nZzdFRTBrUjR6U1ZMN1VNaGpXdTZ5ZUpKTm9haDc1VGVkeDRRSmw3YjNGamJrNGVMd3VYRGJ5aDZNQzA2N1JxVUpaYjVDL3hMdFNZUWJjWE0ranRyUzFkWnE2K289" data-file-name="PixelExperience_Plus_whyred-9.0-20191107-1513-OFFICIAL.zip" data-device-codename="whyred" class="download__btn">
+Download full update (1014 MB)
+</a>
+<ul class="download__meta">
+<li><span>Version:</span> Pie (Plus edition)</li>
+<li><span>File name:</span> PixelExperience_Plus_whyred-9.0-20191107-1513-OFFICIAL.zip</li>
+<li><span>MD5 hash:</span> 502f3c936d22c883ae0fa96827c06174</li>
+<li><span>Date:</span> November 7, 2019 15:13 UTC</li>
+<li><span>Downloads:</span> 9150</li>
+</ul>
+</div>
+<div class="build__changelogs">
+<h3>Changelog</h3>
+<textarea class="changelogs__list" readonly>
+                                            * November security patch
+                                        </textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</main>
+<div style="padding-bottom:50px;">
+<center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9406854625630698" data-ad-slot="4737512201" data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+</center>
+
+</div>
+<footer>
+<div class="footer__inner wrap">
+<div class="footer__branding">
+<img src="/images/PixelExperienceLogo_White.svg" alt="PixelExperience">
+</div>
+<div class="footer__links">
+<ul class="page__links">
+<li><a href="/">Home</a></li>
+<li><a href="/devices">Devices</a></li>
+<li><a href="https://blog.pixelexperience.org" target="_blank">News</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/team">Team</a></li>
+<li><a href="https://bit.ly/jhenrique09_paypal" target="_blank">Donate</a></li>
+<li><a href="https://status.pixelexperience.org" target="_blank">Service Status</a></li>
+</ul>
+<ul class="ex__links">
+<li><a href="/releasecp/ci"><span>
+<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.784 8c0 .272-.025.528-.057.784l1.688 1.32c.153.12.193.336.097.512l-1.6 2.768a.39.39 0 01-.489.176l-1.992-.8a6.146 6.146 0 01-1.351.784l-.305 2.12a.39.39 0 01-.392.336h-3.2a.39.39 0 01-.392-.336l-.304-2.12a5.845 5.845 0 01-1.352-.784l-1.992.8a.402.402 0 01-.488-.176l-1.6-2.768a.404.404 0 01.096-.512l1.688-1.32A6.344 6.344 0 011.783 8c0-.264.024-.528.056-.784L.151 5.896a.394.394 0 01-.096-.512l1.6-2.768a.39.39 0 01.488-.176l1.992.8a6.146 6.146 0 011.352-.784l.304-2.12A.39.39 0 016.183 0h3.2c.2 0 .368.144.392.336l.304 2.12c.489.2.936.464 1.352.784l1.993-.8a.402.402 0 01.488.176l1.6 2.768a.404.404 0 01-.097.512l-1.688 1.32c.032.256.056.512.056.784zm-8.8 0c0 1.544 1.255 2.8 2.8 2.8 1.543 0 2.8-1.256 2.8-2.8 0-1.544-1.257-2.8-2.8-2.8a2.803 2.803 0 00-2.8 2.8z" fill="#fff" />
+</svg>
+</span> CI Dashboard</a></li>
+<li><a href="/stats"><span>
+<svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.143 16h13.714c.629 0 1.143-.514 1.143-1.143V1.143C16 .514 15.486 0 14.857 0H1.143C.514 0 0 .514 0 1.143v13.714C0 15.486.514 16 1.143 16zm5.714-3.429c0 .629.514 1.143 1.143 1.143s1.143-.514 1.143-1.143V3.43c0-.629-.514-1.143-1.143-1.143S6.857 2.8 6.857 3.429v9.142zm-4.571 0c0 .629.514 1.143 1.143 1.143.628 0 1.142-.514 1.142-1.143V6.857c0-.628-.514-1.143-1.142-1.143-.629 0-1.143.515-1.143 1.143v5.714zm10.285 1.143a1.146 1.146 0 01-1.143-1.143v-2.285c0-.629.515-1.143 1.143-1.143.629 0 1.143.514 1.143 1.143v2.286c0 .628-.514 1.142-1.143 1.142z" fill="#fff" />
+</svg>
+</span>
+Statistics</a></li>
+ <li><a href="https://github.com/PixelExperience" target="_blank"><span>
+<svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.202 0A8.2 8.2 0 000 8.202a8.197 8.197 0 005.608 7.782c.41.072.564-.174.564-.39 0-.194-.01-.84-.01-1.527-2.06.38-2.594-.502-2.758-.964-.092-.236-.492-.963-.84-1.158-.288-.154-.698-.534-.011-.544.646-.01 1.107.595 1.261.841.738 1.24 1.917.892 2.389.677.072-.534.287-.892.523-1.097-1.825-.205-3.732-.913-3.732-4.05 0-.892.318-1.63.84-2.205-.081-.205-.369-1.045.083-2.173 0 0 .687-.216 2.255.84a7.611 7.611 0 012.05-.276 7.61 7.61 0 012.051.276c1.57-1.066 2.256-.84 2.256-.84.451 1.128.164 1.968.082 2.173.523.575.84 1.302.84 2.205 0 3.147-1.916 3.845-3.741 4.05.297.256.553.748.553 1.517 0 1.097-.01 1.979-.01 2.256 0 .215.154.471.564.39a8.215 8.215 0 005.588-7.783A8.2 8.2 0 008.202 0z" fill="#fff" />
+</svg>
+</span>
+GitHub</a></li>
+<li><a href="https://gerrit.pixelexperience.org" target="_blank"><span>
+<svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M11.077.5H1.23C.55.5 0 1.051 0 1.73v9.847c0 .68.551 1.23 1.23 1.23h9.847c.68 0 1.23-.55 1.23-1.23V1.73c0-.68-.55-1.231-1.23-1.231z" fill="#606060" />
+<path d="M14.77 4.192H4.922c-.68 0-1.23.551-1.23 1.231v9.846c0 .68.55 1.231 1.23 1.231h9.846c.68 0 1.231-.551 1.231-1.23V5.422c0-.68-.551-1.23-1.23-1.23z" fill="#fff" />
+<path d="M5.538 7.27h3.693V8.5H5.538V7.27zM10.461 7.27h3.693V8.5H10.46V7.27zM5.538 11.577H6.77v-1.23H8v1.23h1.23v1.23H8v1.232H6.77v-1.231H5.537v-1.231zM10.461 11.577h1.231v-1.23h1.231v1.23h1.23v1.23h-1.23v1.232h-1.23v-1.231H10.46v-1.231z" fill="#343434" />
+</g>
+<defs>
+<clipPath id="clip0">
+<path fill="#fff" d="M0 .5h16v16H0z" />
+</clipPath>
+</defs>
+</svg>
+</span>
+Gerrit Code Review</a></li>
+<li><a href="https://crowdin.com/project/pixelexperience" target="_blank"><span>
+<svg height="16" viewBox="0 0 512 512" width="16" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m456.835938 208.867188h-192.800782c-30.417968 0-55.164062 24.746093-55.164062 55.164062v104.75l-49.953125 35.679688c-3.941407 2.8125-6.28125 7.359374-6.28125 12.203124 0 4.847657 2.339843 9.394532 6.28125 12.207032l50.554687 36.109375c3.949219 26.570312 26.914063 47.019531 54.5625 47.019531h192.800782c30.417968 0 55.164062-24.746094 55.164062-55.167969v-192.800781c0-30.417969-24.746094-55.164062-55.164062-55.164062zm-64.828126 210.773437c-3.535156 0-6.265624-1.121094-7.066406-4.175781l-6.109375-21.371094h-36.796875l-6.101562 21.371094c-.804688 3.054687-3.535156 4.175781-7.070313 4.175781-5.625 0-13.175781-3.53125-13.175781-8.671875 0-.324219.160156-.964844.320312-1.609375l31.011719-101.0625c1.445313-4.820313 7.390625-7.074219 13.335938-7.074219 6.105469 0 12.050781 2.253906 13.496093 7.074219l31.011719 101.0625c.160157.644531.320313 1.125.320313 1.609375 0 4.976562-7.550782 8.671875-13.175782 8.671875zm0 0" /><path d="m346.375 377.703125h27.960938l-13.984376-49.324219zm0 0" /><path d="m178.871094 264.03125c0-20.140625 7.042968-38.65625 18.773437-53.253906-17.113281 0-32.992187-5.355469-46.082031-14.453125-13.089844 9.101562-28.96875 14.453125-46.085938 14.453125-4.667968 0-8.457031-3.789063-8.457031-8.460938s3.789063-8.457031 8.457031-8.457031c11.988282 0 23.207032-3.320313 32.8125-9.070313-11.585937-12.503906-19.289062-28.648437-21.152343-46.515624h-11.65625c-4.671875 0-8.460938-3.785157-8.460938-8.457032s3.789063-8.460937 8.460938-8.460937h37.628906v-20.539063c0-4.675781 3.785156-8.460937 8.457031-8.460937s8.457032 3.785156 8.457032 8.460937v20.539063h37.628906c4.671875 0 8.460937 3.789062 8.460937 8.460937s-3.789062 8.457032-8.460937 8.457032h-11.65625c-1.863282 17.867187-9.566406 34.011718-21.152344 46.515624 9.601562 5.757813 20.824219 9.070313 32.808594 9.070313 4.464844 0 8.113281 3.460937 8.429687 7.847656 15.214844-14.15625 35.585938-22.839843 57.957031-22.839843h39.09375v-35.648438l49.953126-35.679688c3.9375-2.8125 6.277343-7.359374 6.277343-12.203124 0-4.847657-2.339843-9.394532-6.277343-12.207032l-50.554688-36.109375c-3.953125-26.570312-26.917969-47.019531-54.566406-47.019531h-192.796875c-30.421875 0-55.167969 24.746094-55.167969 55.164062v192.804688c0 30.417969 24.746094 55.164062 55.167969 55.164062h123.703125zm0 0" /><path d="m151.5625 174.21875c9.257812-9.605469 15.542969-22.078125 17.382812-35.941406h-34.761718c1.839844 13.863281 8.128906 26.335937 17.378906 35.941406zm0 0" /></svg>
+</span>
+Help on Translation</a></li>
+<li><a href="https://twitter.com/PixelExpROM" target="_blank"><span>
+<svg width="16" height="16" fill="#fff" viewBox="0 0 24 24"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
+</span>
+Twitter</a></li>
+<li><a href="https://t.me/PixelExperience" target="_blank"><span>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="url(#paint0_linear)" />
+<path d="M6.53334 11.6667C6.27414 11.6667 6.31821 11.5688 6.22881 11.322L5.46667 8.81384L11.3333 5.33337" fill="#606060" />
+<path d="M6.53333 11.6666C6.73333 11.6666 6.82166 11.5751 6.93332 11.4666L7.99999 10.4294L6.66946 9.62708" fill="#232323" />
+<path d="M6.66932 9.62735L9.89332 12.0093C10.2613 12.2123 10.5267 12.1072 10.6184 11.6678L11.9307 5.48355C12.0651 4.94488 11.7254 4.70048 11.3734 4.86028L3.66739 7.83168C3.14139 8.04268 3.14452 8.33615 3.57152 8.46688L5.54905 9.08415L10.1273 6.19581C10.3434 6.06475 10.5418 6.13515 10.379 6.27968" fill="#343434" />
+<defs>
+<linearGradient id="paint0_linear" x1="10.672" y1="2.672" x2="6.672" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" />
+<stop offset="1" stop-color="white" />
+</linearGradient>
+ </defs>
+</svg>
+</span>
+Telegram</a></li>
+</ul>
+</div>
+<div class="footer__credits">
+Project Maintained by <a href="https://github.com/jhenrique09/">jhenrique09</a>
+<br /><br />
+<a href="https://www.packet.com/" target="_blank"><img src="/images/packet-w.png" alt=""></a><br>Hosted on <a href="https://www.packet.com/" target="_blank">Packet.com</a> - Cloud &amp; Edge Computing Infrastructure Provider<br><br>
+</div>
+</div>
+</footer>
+
+<script>
+            $(document).ready(function () {
+            });
+            var hints = [{"text":"Asus Zenfone Max M1 (X00P)","codename":"X00P"},{"text":"Asus Zenfone Max Pro M1 (X00TD)","codename":"X00TD"},{"text":"Asus Zenfone Max Pro M2 (X01BD)","codename":"X01BD"},{"text":"Google Nexus 5X (bullhead)","codename":"bullhead"},{"text":"Google Nexus 6P (angler)","codename":"angler"},{"text":"Google Pixel (sailfish)","codename":"sailfish"},{"text":"Google Pixel XL (marlin)","codename":"marlin"},{"text":"LeEco Le 2 (s2)","codename":"s2"},{"text":"Lenovo Z6 Lite (kunlun2)","codename":"kunlun2"},{"text":"Motorola Moto G5 Plus (potter)","codename":"potter"},{"text":"Motorola Moto G5S (montana)","codename":"montana"},{"text":"Motorola Moto G5S Plus (sanders)","codename":"sanders"},{"text":"Motorola Moto One Power (chef)","codename":"chef"},{"text":"Motorola Moto X4 (payton)","codename":"payton"},{"text":"OnePlus 2 (oneplus2)","codename":"oneplus2"},{"text":"OnePlus 3\/3T (oneplus3)","codename":"oneplus3"},{"text":"OnePlus 5 (cheeseburger)","codename":"cheeseburger"},{"text":"OnePlus 5T (dumpling)","codename":"dumpling"},{"text":"OnePlus 6 (enchilada)","codename":"enchilada"},{"text":"OnePlus 6T (fajita)","codename":"fajita"},{"text":"OnePlus 7 Pro (guacamole)","codename":"guacamole"},{"text":"OnePlus 7T (hotdogb)","codename":"hotdogb"},{"text":"OnePlus 7T Pro (hotdog)","codename":"hotdog"},{"text":"Realme 3 Pro (RMX1851)","codename":"RMX1851"},{"text":"Realme 5 Pro (RMX1971)","codename":"RMX1971"},{"text":"Samsung Galaxy S7 (herolte)","codename":"herolte"},{"text":"Samsung Galaxy S7 Edge (hero2lte)","codename":"hero2lte"},{"text":"Sony Xperia 1 DSDS (j9110)","codename":"j9110"},{"text":"Sony Xperia 1 RoW (j8110)","codename":"j8110"},{"text":"Sony Xperia 10 DSDS (i4113)","codename":"i4113"},{"text":"Sony Xperia 10 Plus DSDS (i4213)","codename":"i4213"},{"text":"Sony Xperia 10 Plus RoW (i3213)","codename":"i3213"},{"text":"Sony Xperia 10 RoW (i3113)","codename":"i3113"},{"text":"Sony Xperia 5 DSDS (j9210)","codename":"j9210"},{"text":"Sony Xperia 5 RoW (j8210)","codename":"j8210"},{"text":"Sony Xperia XA2 DSDS (h4113)","codename":"h4113"},{"text":"Sony Xperia XA2 Plus DSDS (h4413)","codename":"h4413"},{"text":"Sony Xperia XA2 Plus RoW (h3413)","codename":"h3413"},{"text":"Sony Xperia XA2 RoW (h3113)","codename":"h3113"},{"text":"Sony Xperia XA2 Ultra DSDS (h4213)","codename":"h4213"},{"text":"Sony Xperia XA2 Ultra RoW (h3213)","codename":"h3213"},{"text":"Sony Xperia XZ Premium DSDS (g8142)","codename":"g8142"},{"text":"Sony Xperia XZ Premium RoW (g8141)","codename":"g8141"},{"text":"Sony Xperia XZ1 Compact RoW (g8441)","codename":"g8441"},{"text":"Sony Xperia XZ1 DSDS (g8342)","codename":"g8342"},{"text":"Sony Xperia XZ1 RoW (g8341)","codename":"g8341"},{"text":"Sony Xperia XZ2 Compact DSDS (h8324)","codename":"h8324"},{"text":"Sony Xperia XZ2 Compact RoW (h8314)","codename":"h8314"},{"text":"Sony Xperia XZ2 DSDS (h8266)","codename":"h8266"},{"text":"Sony Xperia XZ2 RoW (h8216)","codename":"h8216"},{"text":"Sony Xperia XZ3 DSDS (h9436)","codename":"h9436"},{"text":"Sony Xperia XZ3 RoW (h8416)","codename":"h8416"},{"text":"Xiaomi Mi 5 (gemini)","codename":"gemini"},{"text":"Xiaomi Mi 5s (capricorn)","codename":"capricorn"},{"text":"Xiaomi Mi 5s Plus (natrium)","codename":"natrium"},{"text":"Xiaomi Mi 6X (wayne)","codename":"wayne"},{"text":"Xiaomi Mi 8 (dipper)","codename":"dipper"},{"text":"Xiaomi Mi 8 Lite (platina)","codename":"platina"},{"text":"Xiaomi Mi 9 (cepheus)","codename":"cepheus"},{"text":"Xiaomi Mi 9 SE (grus)","codename":"grus"},{"text":"Xiaomi Mi A1 (tissot)","codename":"tissot"},{"text":"Xiaomi Mi A2 (jasmine_sprout)","codename":"jasmine_sprout"},{"text":"Xiaomi Mi A3 (laurel_sprout)","codename":"laurel_sprout"},{"text":"Xiaomi Mi Mix (lithium)","codename":"lithium"},{"text":"Xiaomi Mi Mix 2 (chiron)","codename":"chiron"},{"text":"Xiaomi Mi Mix 2s (polaris)","codename":"polaris"},{"text":"Xiaomi Mi Note 2 (scorpio)","codename":"scorpio"},{"text":"Xiaomi Poco F1 (beryllium)","codename":"beryllium"},{"text":"Xiaomi Redmi 3S\/3X (land)","codename":"land"},{"text":"Xiaomi Redmi 4A (rolex)","codename":"rolex"},{"text":"Xiaomi Redmi 4X (santoni)","codename":"santoni"},{"text":"Xiaomi Redmi 5 (rosy)","codename":"rosy"},{"text":"Xiaomi Redmi 5A (riva)","codename":"riva"},{"text":"Xiaomi Redmi 6 Pro (sakura)","codename":"sakura"},{"text":"Xiaomi Redmi K20 Pro\/Mi 9T Pro (raphael)","codename":"raphael"},{"text":"Xiaomi Redmi K20\/Mi 9T (davinci)","codename":"davinci"},{"text":"Xiaomi Redmi K30\/Poco X2 (phoenix)","codename":"phoenix"},{"text":"Xiaomi Redmi Note 3 Pro (kenzo)","codename":"kenzo"},{"text":"Xiaomi Redmi Note 4\/4X (mido)","codename":"mido"},{"text":"Xiaomi Redmi Note 5 Global\/Pro (whyred)","codename":"whyred"},{"text":"Xiaomi Redmi Note 5\/Plus (vince)","codename":"vince"},{"text":"Xiaomi Redmi Note 7 (lavender)","codename":"lavender"},{"text":"Xiaomi Redmi Note 7 Pro (violet)","codename":"violet"},{"text":"Xiaomi Redmi Note 8 (ginkgo)","codename":"ginkgo"},{"text":"Xiaomi Redmi Note 8 Pro (begonia)","codename":"begonia"},{"text":"ZUK Z1 (ham)","codename":"ham"},{"text":"ZUK Z2 Plus (z2_plus)","codename":"z2_plus"}];
+        </script>
+<script src="/assets/js/selectnav.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/app-ads.js"></script>
+<script>
+    $(document).ready(function () {
+        showBuild('ten_plus', 'PixelExperience_Plus_whyred-10.0-20200513-0852-OFFICIAL.zip');
+    });
+</script>
+</body>
+</html>

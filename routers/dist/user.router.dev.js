@@ -10,9 +10,9 @@ var validate = require("../validate/validate");
 
 var loginValidate = require("../validate/login.check");
 
-userRouter.get('/', controller.index);
-userRouter.get('/search', controller.search);
+userRouter.get('/', loginValidate.logincheck_2, controller.index);
+userRouter.get('/search', loginValidate.logincheck_2, controller.search);
 userRouter.get('/create', controller.create);
-userRouter.post('/create', controller.postCreate);
-userRouter.post('/', controller.postDeleted);
+userRouter.post('/create', loginValidate.logincheck_2, controller.postCreate);
+userRouter.post('/', loginValidate.logincheck_2, controller.postDeleted);
 module.exports = userRouter;

@@ -1,14 +1,19 @@
 {
   "users": [
     {
-      "id": "wYMy-Fpzo",
-      "name": "123",
-      "password": "123"
+      "name": "sdgwfdqw",
+      "password": "dvsdv",
+      "avatar": "upload/c7938d61f2f057999318e53fbfadb8e0"
     },
     {
-      "id": "ZsnxahwhR",
-      "name": "hungbadao990",
-      "password": "hungbadao990"
+      "name": "HI",
+      "password": "HI",
+      "avatar": "upload/75adeea3a8343f144f1ca99705cfa094"
+    },
+    {
+      "name": "hung",
+      "password": "hung",
+      "avatar": "upload/eb2e69b0bfc0f6b5df671b73e7b13a45"
     }
   ],
   "product": [
